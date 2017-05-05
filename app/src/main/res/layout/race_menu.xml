@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:backgroundTint="#FFFFFF"
+        android:baselineAligned="true">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TabHost
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tabHost"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/compete_light_blue"
+                        style="@style/BlocksHeader"></TabWidget>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/tab1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"></LinearLayout>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/teamTabText"
+                            android:id="@+id/tTab1"
+                            android:gravity="center|fill"
+                            style="@style/TabsTextFont"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/team2TabText"
+                            android:id="@+id/tTab2"
+                            style="@style/TabsTextFont" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="@color/compete_light_blue">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Time remaining: --"
+                android:id="@+id/tCountdown"
+                android:layout_weight="3"
+                style="@style/TimeLeft"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/runText"
+                android:id="@+id/bRunRace"
+                style="@style/ButtonRun"
+                android:background="@drawable/anim_button_run" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

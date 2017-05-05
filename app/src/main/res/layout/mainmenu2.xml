@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/compete_light_blue">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="0.1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/compete_text"
+                    android:gravity="center">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="@string/textStatistics"
+                            style="@style/StatisticsTextFont"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"></LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="bottom">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"></LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="@string/textOverall"
+                            android:gravity="bottom"
+                            style="@style/StatisticsBlocks" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/pagerGlobalStats"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left">
+                    </android.support.v4.view.ViewPager>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"></LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="9"></LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.2"
+                                android:gravity="center"
+                                android:background="@drawable/indicator_1"
+                                android:id="@+id/lGlobalIndicator">
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.5"></LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="bottom" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="@string/textLastRace"
+                            android:gravity="bottom"
+                            style="@style/StatisticsBlocks" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/pagerLastStats"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="left"
+                        android:layout_alignParentEnd="false">
+                    </android.support.v4.view.ViewPager>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="9" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.2"
+                                android:gravity="center"
+                                android:background="@drawable/indicator_1"
+                                android:id="@+id/lLastRaceIndicator" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.5" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="bottom" >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:background="@color/compete_light_blue">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"></LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"></LinearLayout>
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:id="@+id/bProfile"
+                            android:background="@drawable/anim_button_profile" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"></LinearLayout>
+
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:id="@+id/bRun"
+                    android:background="@drawable/anim_button_man_run" />
+                 <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="3" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:id="@+id/bRanking"
+                            android:background="@drawable/anim_button_ranking"  />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"/>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

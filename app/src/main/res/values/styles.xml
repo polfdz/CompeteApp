@@ -1,0 +1,171 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- RACE -->
+    <style name="Crono" >
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <!-- RACE MENU-->
+    <style name="ButtonRun" >
+        <item name="android:textColor">#007aff</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="TimeLeft" >
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TimeLeftCrono" >
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="runnerNameBlock" >
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="runnerDistanceBlock" >
+        <item name="android:textColor">#d0d0d0</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="TabsTextFont">
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!-- Register -->
+    <style name="RegisterButtons">
+        <item name="android:textColor">#007aff</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Profile -->
+    <style name="ProfileHeaders">
+        <item name="android:textColor">#d0d0d0</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="ProfileDate">
+        <item name="android:textColor">#007aff</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!-- MAIN MENU -->
+    <style name="BlocksHeader">
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BlocksUnity">
+    <item name="android:textColor">#442332</item>
+    <item name="android:typeface">normal</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:gravity">left</item>
+    <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BlocksNumber" >
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+    <style name="BlocksDate" >
+        <item name="android:textColor">#d0d0d0</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="StatisticsBlocks">
+        <item name="android:textColor">#d0d0d0</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="BlocksFont" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="FontSmallTextBlocks" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="StatisticsTextFont">
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="SmallStatisticsTextFont" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#000000</item>
+        <item name="android:typeface">normal</item>
+    </style>
+    <style name="FontLightBlue" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FontDarkBlue" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">#442332</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FontDarkGreen" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">#02a023</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FontLightGreen" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">#76cd29</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

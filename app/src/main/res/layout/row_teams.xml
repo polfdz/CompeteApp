@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iRunner"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/belgium" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tRunner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pol"
+            android:layout_gravity="center"
+            style="@style/runnerNameBlock">
+        </TextView>
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="20px" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/iConnectionIndicator"
+            android:src="@drawable/online_indicator"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/runnerDistanceBlock"
+            android:id="@+id/tRunnerDistance"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="0 km"
+            android:layout_gravity="center"
+            android:gravity="top|center" />
+    </LinearLayout>
+
+</LinearLayout>

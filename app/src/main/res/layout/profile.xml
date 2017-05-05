@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/compete_blue">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"/>
+
+            <Button
+                android:id="@+id/bLogout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/textLogout"
+                style="@style/ProfileDate"
+                android:background="@drawable/anim_button_date" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/profileUserName"
+                    android:id="@+id/textView12"
+                    style="@style/ProfileHeaders"
+                    android:layout_weight="5" />
+
+            </LinearLayout>
+
+            <EditText
+                android:hint="@string/username"
+                android:id="@+id/tUsername"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                style="@style/CodeFont">
+            </EditText>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" >
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    style="@style/ProfileHeaders"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/profileCountry"
+                    android:id="@+id/textView13"
+                    android:layout_weight="5" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/lCountry"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                style="@style/CodeFont">
+            </Spinner>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" >
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    style="@style/ProfileHeaders"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/profileHeight"
+                    android:id="@+id/textView14"
+                    android:layout_weight="5" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/tHeight"
+                style="@style/CodeFont"
+                android:layout_weight="1"
+                android:hint="enter height (cm)" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" >
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    style="@style/ProfileHeaders"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/profileGender"
+                    android:id="@+id/textView15"
+                    android:layout_weight="5" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rGenderGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rMale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:text="Male"
+                    style="@style/CodeFont"/>
+
+                <RadioButton
+                    android:id="@+id/rFamele"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:checked="false"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:text="Female"
+                    style="@style/CodeFont"/>
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/bAge"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/profileDate"
+                    android:layout_weight="3"
+                    android:background="@drawable/anim_button_date"
+                    style="@style/ProfileDate"></Button>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/compete_blue">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20px"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/bSaveProfile"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                style="@style/CodeFont"
+                android:background="@android:drawable/ic_menu_save" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20px"
+                android:layout_weight="2" />
+
+            <Button
+                android:id="@+id/bSkipProfile"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                style="@style/CodeFont"
+                android:background="@android:drawable/ic_menu_delete" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20px"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lDatePicker"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@color/compete_blue">
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+                    <DatePicker
+                        android:id="@+id/dpAge"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:calendarViewShown="false"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6" >
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/bSetAge"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_menu_save" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="0.3" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/bSkipAge"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_menu_close_clear_cancel" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

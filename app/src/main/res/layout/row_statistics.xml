@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.compete.ppj.compete_test.mainMenu.MainMenu_old"
+    android:background="@android:color/transparent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="#FF0000">
+            <TextView
+                android:id="@+id/textTypeStatistics"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="#FF0000">
+            <TextView
+                android:id="@+id/textStatistics"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

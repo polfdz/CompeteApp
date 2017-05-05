@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/iRankingRunner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/belgium"
+            android:layout_weight="1">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tRankingRunnerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pol"
+            android:layout_gravity="left|center"
+            style="@style/runnerNameBlock"
+            android:layout_weight="3"
+            android:gravity="left">
+        </TextView>
+
+        <TextView
+            style="@style/runnerDistanceBlock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0 p"
+            android:layout_gravity="center"
+            android:gravity="top|right"
+            android:layout_weight="1"
+            android:id="@+id/tRankingRunnerPoints" />
+
+    </LinearLayout>
+
+</LinearLayout>

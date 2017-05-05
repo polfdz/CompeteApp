@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:background="@drawable/blocks_background">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"></LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="@string/totalDistance"
+                            style="@style/BlocksFont"
+                            android:id="@+id/tBlockTotalDistance" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/tTotalDistance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="100 km"
+                            style="@style/FontLightBlue" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"></LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:background="@drawable/blocks_background"
+                android:baselineAligned="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5" >
+
+                        <TextView
+                            style="@style/FontDarkBlue"
+                            android:gravity="center"
+                            android:id="@+id/tAverageSpeed"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="100 km" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:background="@drawable/blocks_background" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5" >
+
+                        <TextView
+                            style="@style/FontDarkBlue"
+                            android:gravity="center"
+                            android:id="@+id/tRacesRunned"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="100 km" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:background="@drawable/blocks_background"
+                android:baselineAligned="true" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5" >
+
+                        <TextView
+                            style="@style/FontLightBlue"
+                            android:gravity="center"
+                            android:id="@+id/tRacesWon"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="100 km" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:background="@drawable/blocks_background" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5" >
+
+                        <TextView
+                            style="@style/FontLightBlue"
+                            android:gravity="center"
+                            android:id="@+id/tTotalPoints"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="100 km" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:background="@drawable/blocks_background"
+                android:baselineAligned="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5" >
+
+                        <TextView
+                            style="@style/FontDarkBlue"
+                            android:gravity="center"
+                            android:id="@+id/tStatus"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="--" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

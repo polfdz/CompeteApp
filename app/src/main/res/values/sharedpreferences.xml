@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+                        SharedPreferences.Editor editor =preferences.edit();
+
+    //RegisterStatus
+    SharedPreferences preferences = getSharedPreferences("MyPREFERENCES", Context.MODE_PRIVATE);
+    String registerStatus = preferences.getString("RegisterStatus", null);
+    SharedPreferences.Editor editor = preferences.edit();
+    editor.putString("RegisterStatus","registrat");
+
+
+    //email registered
+    SharedPreferences preferences = getSharedPreferences("MyPREFERENCES", Context.MODE_PRIVATE);
+    editor.putString("RegisterStatus","registrat");
+    editor.putString("user_email", _email);
+
+    String userName = preferences.getString("user_name", null);
+    String sex = preferences.getString("gender", null); //0 Male , 1 Female
+    int country = preferences.getInt("country", 0);
+                editor.putString("id",_id);
+
+        //Statistics
+
+        editor.putString("total_km",_total_km);
+        editor.putString("avg_speed", _avg_speed);
+        editor.putString("won", _won);
+        editor.putString("entered", _entered);
+        editor.putString("points", _points);
+
+
+
+    -->
+</resources>

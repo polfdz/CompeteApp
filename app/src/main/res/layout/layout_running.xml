@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Time remaining: --"
+                android:id="@+id/tTimeLeft"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                style="@style/TimeLeft"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <Chronometer
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/chronometer"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:visibility="visible"
+                style="@style/Crono" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:background="@android:drawable/divider_horizontal_textfield"
+        android:baselineAligned="true"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2.5">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:id="@+id/tDistance"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"
+            android:background="@android:drawable/divider_horizontal_textfield"
+            android:baselineAligned="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:id="@+id/tSpeed" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:background="@android:drawable/divider_horizontal_textfield"
+        android:baselineAligned="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="Restart!"
+            android:id="@+id/bRestart"
+            android:layout_weight="1"
+            android:background="@color/compete_green" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="Pause"
+            android:id="@+id/bPause"
+            android:layout_weight="1"
+            android:background="@color/compete_blue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:background="@android:drawable/divider_horizontal_textfield"
+        android:baselineAligned="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center">
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="0dp"
+            android:layout_weight="1.2" />
+
+        <com.compete.ppj.compete_test.Race.Extras.SlideButton
+            android:id="@+id/bSlideStop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clickable="false"
+            android:max="100"
+            android:progressDrawable="@android:color/transparent"
+            android:thumb="@drawable/slide_to_stop"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:indeterminate="false" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

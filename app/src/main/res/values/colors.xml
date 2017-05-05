@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="compete_blue">#08aaf3</color>
+    <color name="compete_orange">#ff6418</color>
+    <color name="compete_gray">#442332</color>
+    <color name="compete_light_gray">#d0d0d0</color>
+    <color name="compete_light_blue">#00a7e5</color>
+    <color name="compete_green">#76cd29</color>
+</resources>

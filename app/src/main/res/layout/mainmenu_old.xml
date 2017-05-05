@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#442332">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:background="#442332"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/textCompete"
+                        android:gravity="center"
+                        android:textColor="@color/compete_blue"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/textStatistics"
+                        style="@style/StatisticsTextFont"/>
+
+                </LinearLayout>
+
+                <TabHost
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/tabHostMainMenu"
+                    android:layout_weight="2"
+                    android:background="#442332">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:visibility="invisible">
+
+                            <LinearLayout
+                                android:id="@+id/tabGlobal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone"></LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/tabLastRace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone"></LinearLayout>
+
+                        </FrameLayout>
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="bottom"></TabWidget>
+
+                    </LinearLayout>
+                </TabHost>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/pagerMainMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v4.view.ViewPager>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.9"
+            android:orientation="vertical"
+            android:background="#442332">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"></LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"></LinearLayout>
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:id="@+id/bProfile"
+                            android:background="@drawable/anim_button_profile" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"></LinearLayout>
+
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:id="@+id/bRun"
+                    android:background="@drawable/anim_button_man_run" />
+                 <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="3" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:id="@+id/bRanking"
+                            android:background="@drawable/anim_button_ranking"  />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"/>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
